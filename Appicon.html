@@ -1,0 +1,76 @@
+<!doctype html>
+  <html lang="en-us">
+    <head>
+     <title> drow application logo.html </title>
+     <!-- wrote by Mohamed Abdalrazg Altom Alfadel -->
+    </head>
+    <body>
+     <canvas id="dam" width="340px" height="400px"></canvas>
+    </body>
+ </html>
+<style>
+     /*wrote by Mohamed Abdalrazg Altom Alfadel*/
+   
+body
+{
+margin: 0px;
+background-color: #223366;
+}
+</style>
+
+<script>
+
+     // wrote by Mohamed Abdalrazg Altom Alfadel
+
+//select the Elements and create the border
+var c = document.getElementById("dam"),
+    cx = c.getContext("2d");
+//drow the font
+cx.font = "105px serif";
+cx.fillStyle = "#FFF";
+cx.fillText('HTML', 15, 90);
+
+//drow the orange shap
+cx.fillStyle = "#FF7718";
+cx.beginPath();
+cx.moveTo(20, 100);
+cx.lineTo(325, 100);
+cx.lineTo(300, 370);
+cx.lineTo(170, 400);
+cx.lineTo(40, 370);
+cx.lineTo(20, 100);
+cx.fill();
+
+//drow the logo that looks like number five
+cx.beginPath();
+cx.fillStyle = "#FFF";
+cx.moveTo(45, 130);
+cx.lineTo(307, 130);
+cx.lineTo(305, 160);
+cx.lineTo(90, 160);
+cx.lineTo(90, 190);
+cx.lineTo(300, 190);
+cx.lineTo(285, 340);
+cx.lineTo(170, 370);
+cx.lineTo(60, 340);
+cx.lineTo(60, 255);
+cx.lineTo(90, 255);
+cx.lineTo(95, 320);
+cx.lineTo(170, 340);
+cx.lineTo(245, 320);
+cx.lineTo(255, 235);
+cx.lineTo(60, 235);
+cx.closePath();
+cx.fill();
+
+//drow the shadow lire
+cx.beginPath();
+cx.fillStyle = "rgb(255, 255, 255, .2)";
+cx.moveTo(170, 117);
+cx.lineTo(316, 117);
+cx.lineTo(293.9, 350);
+cx.lineTo(170, 385);
+cx.fill();
+
+
+</script>
